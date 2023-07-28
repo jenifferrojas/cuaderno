@@ -1,0 +1,113 @@
+body{
+    margin: 20px;
+    
+    padding: 70px;
+    box-sizing: content-box;
+}
+div.padre{
+    
+    margin: 7px;
+    padding: 20px;
+    border-top: 60px solid rgb(231, 195, 195);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 30cm;
+    background: whitesmoke;
+    border-bottom: 60px solid rgb(231, 195, 195);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+body{
+    justify-content: center;
+}
+section.primer{
+    display: flex;
+    width: 20cm;
+    height: 5cm;
+    margin: 01px;
+    padding: 0px;
+    
+}
+   .primer1{
+       width: 20cm;
+       height: 5cm;
+       margin: 4px;
+       padding: 4px;  
+    }
+    
+      .a1{
+          background: rgb(236, 172, 172);
+          margin-left: 3cm;
+          margin-right: 3cm;
+          margin-top: 3cm;
+          text-align: center;
+
+        }
+   
+
+       .pa{
+          border: 2px dashed rgb(0, 0, 0); 
+          padding: 5px;
+        }
+
+div.jeni{
+    border-top: 3px dotted rgb(189, 117, 117);
+    font-size: 20px;
+    color:rgb(139, 34, 34);
+    font-weight: 800;
+    width: 30cm;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+main.cont{
+    padding-left: 3cm;
+}
+div.je{
+    border-top: 3px dotted rgb(189, 117, 117);
+    font-size: 20px;
+    color:rgb(139, 34, 34);
+    font-weight: 800;
+    width: 30cm;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   
+}
+
+header.cabe{
+    margin-bottom: 2cm;
+
+}
+div.jen{
+    
+    border-top: 3px dotted rgb(189, 117, 117);
+    font-size: 20px;
+    color:rgb(139, 34, 34);
+    font-weight: 800;
+    width: 30cm;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 55px;
+}
+dt{
+    font-weight: bold; /* Texto en negrita */
+  color: #eb4747; /* Texto de color naranja (#ff9900) */
+}
+dt.letra{
+    font-size: 20px;
+    font-weight: bold; /* Texto en negrita */
+  color: #cc076a; /* Texto de color naranja (#ff9900) */
+}
+dd{
+    padding: 10px;
+    font-size: 17;
+} 
+li.solo{
+    padding: 4px;
+}
+p{
+    font-size: 17px; 
+}

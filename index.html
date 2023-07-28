@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="https://img.freepik.com/vector-premium/alfabeto-botanico-floral-vintage-dibujado-mano-monograma-letra-j-letra-plantas-flores_538636-266.jpg?w=360"> 
+    <title>apuntes</title>
+</head>
+<body >
+    
+    <div class="padre">
+        <div>
+            <h1>Apuntes:</h1>
+            <ul>
+                <li><a href="#uno">Bases de datos</a></li>
+                <li><a href="#dos">ODBC </a></li>
+                <li><a href="#tres">Tipos de bases de datos</a></li>
+                <li><a href="#cuatro">Utilización de MySQL</a></li>
+                <li><a href="#cinco">Utilización de Access</a></li>
+                <li><a href="#seis"> Utilización de PostgreSQL</a></li>
+                <li><a href="#siete">Aplicaciones para gestion de bases de datos</a></li>
+                <li><a href="#ocho">Los motores de bases de datos existente</a>
+                <ol>
+                    <li><a href="#a">Funcionamiento de Access</a></li>
+                    <li><a href="#b">Funcionamiento de MariaDB/MySQL</a></li>
+                    <li><a href="#c">Funcionamiento de PostgreSQL</a></li>
+                </ol>
+                </li>
+            </ul>
+        </div>
+        <div class="jeni"><h2 id="uno">Bases de datos</h2>  </div>
+        <div>
+            <header> 
+                <h3 class="ori">Origen: </h3>
+            </header>
+            <main>
+                <p>El origen de las bases de datos se remonta a la necesidad de gestionar grandes cantidades de datos de manera eficiente. A medida que la informática y la tecnología de la información avanzaron, se hizo evidente que los enfoques tradicionales de almacenamiento de datos, como los sistemas de archivos jerárquicos y en red, presentaban limitaciones para manejar datos complejos y relaciones entre ellos. El modelo relacional, propuesto por Edgar F. Codd en 1970, marcó un hito importante en la evolución de las bases de datos modernas. Desde entonces, se han desarrollado y adoptado diferentes tecnologías de bases de datos, como sistemas de gestión de bases de datos relacionales (RDBMS), bases de datos NoSQL y bases de datos en la nube, para satisfacer diversas necesidades de almacenamiento y gestión de datos.</p>
+            </main>
+        </div>
+        <div>
+            <header> 
+                <h3 class="ori">Función: </h3>
+            </header>
+            <main>
+                <p>Funcionan mediante el uso de un Sistema de Gestión de Bases de Datos (DBMS), que actúa como una interfaz entre el usuario y los datos almacenados. El DBMS gestiona las operaciones de lectura, escritura y modificación de datos, garantizando la integridad, seguridad y consistencia de la información almacenada. Las bases de datos también permiten a los usuarios realizar consultas para obtener información específica a través de un lenguaje de consulta, como SQL (Structured Query Language). El DBMS optimiza el rendimiento de las consultas mediante el uso de índices y técnicas de optimización.</p>
+            </main>
+        </div>
+        <h3> Conceptos básicos:</h3>
+        <main class="cont">
+           
+            <!-- parte1 -->
+            <section class="primer">
+                <aside class="primer1">
+                    <header class="a1"><h4> Tablas: </h4></header>
+                    <article class="pa"><p>Es la estructura básica en una base de datos relacional. Representa una colección de datos organizados en filas y columnas. Cada tabla tiene un nombre único y las columnas representan atributos de los datos.</p></article>
+                </aside>
+
+                <aside class="primer1">
+                    <header class="a1"><h4> Campos: </h4></header>
+                    <article class="pa"><p>También conocido como columna, es una unidad individual de datos dentro de una tabla. Cada campo representa un atributo específico de los datos, como nombre, edad o dirección.</p></article>
+                </aside>
+            </section>
+            <!-- parte2-->
+            <section class="primer">
+                <aside class="primer1">
+                    <header class="a1"><h4> Registros: </h4></header>
+                    <article class="pa"><p>También conocido como fila, es una colección completa de datos relacionados en una tabla. Cada registro representa una entidad o una instancia de los datos almacenados en la tabla.</p></article>
+                </aside>
+
+                <aside class="primer1">
+                    <header class="a1"><h4> Claves: </h4></header>
+                    <article class="pa">
+                        <ul>
+                            <li><p><strong>clave primaria</strong>  es un atributo que identifica de manera única cada registro en esa tabla </p></li>
+                            <li><p><strong>clave foránea </strong>es un atributo  en una tabla que establece una relación con la otra tabla</p></li>
+                            
+                        </ul>
+                            
+                    </article>
+                </aside>
+            </section>
+            <!-- parte3 -->
+            <section class="primer">
+                <aside class="primer1">
+                    <header class="a1"><h4> Relación: </h4></header>
+                    <article class="pa"><p>Es una asociación lógica entre dos o más tablas basada en campos comunes. Las relaciones se utilizan para conectar datos entre diferentes tablas y mejorar la eficiencia y la normalización de la base de datos.</p></article>
+                </aside>
+
+                <aside class="primer1">
+                    <header class="a1"><h4> SQL: </h4></header>
+                    <article class="pa"><p>Es un lenguaje de programación específico para bases de datos que permite realizar consultas y manipulaciones en la base de datos. Es ampliamente utilizado en bases de datos relacionales.</p></article>
+                </aside>
+            </section>
+            <!-- parte4 -->
+            <section class="primer">
+                <aside class="primer1">
+                    <header class="a1"><h4> DBMS: </h4></header>
+                    <article class="pa"><p>Es el software que permite administrar, organizar y acceder a los datos almacenados en una base de datos.</p></article>
+                </aside>
+            </section>
+        </main>
+      
+        <div>
+            <header> 
+                <div class="jen"><h2 id="dos">ODBC (Open Database Connectivity)</h2>  </div>
+            </header>
+            <main>
+                <p>es una API (Interfaz de Programación de Aplicaciones) estándar que permite a las aplicaciones acceder a datos de diferentes fuentes de bases de datos mediante un lenguaje común. Funciona como un puente entre una aplicación y una base de datos, permitiendo que la aplicación se comunique con la base de datos independientemente del sistema de gestión de bases de datos (DBMS) subyacente. Esto significa que una aplicación escrita para ODBC puede funcionar con diferentes bases de datos sin tener que modificar su código, lo que facilita la portabilidad de la aplicación.</p>
+            </main>
+        </div>
+
+        <div>
+            <header> 
+                <div class="jen" id="tres"><h2>Tipos de bases de datos</h2>  </div>
+            </header>
+            <main class="cont">
+           
+                <!-- parte1 -->
+                <section class="primer">
+                    <aside class="primer1">
+                        <article class="pa"><p><strong>Bases de Datos Relacionales (RDBMS):</strong> 
+                            Utilizan el modelo relacional para organizar datos en tablas con filas y columnas. Ejemplos: MySQL, PostgreSQL, Oracle, SQL Server.</p></article>
+                    </aside>
+    
+                    <aside class="primer1">
+                        <article class="pa"><p><strong>Bases de Datos NoSQL:</strong> Utilizan modelos de datos no relacionales y están diseñadas para manejar grandes volúmenes de datos no estructurados o semiestructurados. Ejemplos: MongoDB, Cassandra, Redis.</p></article>
+                    </aside>
+                </section>
+                <!-- parte2-->
+                <section class="primer">
+                    <aside class="primer1">
+                        <article class="pa"><p><strong>Bases de Datos Orientadas a Objetos:</strong>
+                            Almacenan datos en forma de objetos, lo que permite una mejor representación de la realidad en aplicaciones orientadas a objetos. Ejemplo: db4o.
+                           </p></article>
+                    </aside>
+    
+                    <aside class="primer1">
+                        <article class="pa">
+                            <p><strong>Bases de Datos en Memoria:</strong> Mantienen todos los datos en la memoria principal para una recuperación más rápida y eficiente. Ejemplos: Memcached, Redis</p>
+                                
+                        </article>
+                    </aside>
+                </section>
+                <!-- parte3 -->
+                <section class="primer">
+                    <aside class="primer1">
+                        <article class="pa"><p><strong>Bases de Datos en la Nube:</strong> Almacenan y gestionan datos en la nube, ofreciendo escalabilidad y acceso desde cualquier lugar. Ejemplos: Amazon RDS, Microsoft Azure SQL Database.</p></article>
+                    </aside>
+                </section>
+                
+            </main>
+        </div>
+
+        <div>
+            <header class="cabe"> 
+                <div class="je"><h2 id="cuatro">Utilización de MySQL:</h2>  </div>
+                <p>MySQL es un sistema de gestión de bases de datos relacionales (RDBMS) de código abierto ampliamente utilizado. Es conocido por ser rápido, seguro y fácil de usar. MySQL es compatible con varias plataformas y es una opción popular para aplicaciones web y sistemas empresariales. Se utiliza principalmente para:</p>
+                <ul>
+                    <li class="solo">Sitios web dinámicos y aplicaciones web.</li>
+                    <li class="solo">Aplicaciones empresariales y sistemas de gestión.</li>
+                    <li class="solo">Sistemas de análisis de datos y almacenamiento en caché.</li>
+                    <li class="solo">Aplicaciones de comercio electrónico.</li>
+                </ul>
+            </header>
+            <header class="cabe"> 
+                <div class="je"><h2 id="cinco">Utilización de Access:</h2>  </div>
+                <p>Microsoft Access es una base de datos de escritorio utilizada principalmente para aplicaciones de pequeña a mediana escala en entornos de oficina. Se incluye en la suite Microsoft Office y es ampliamente utilizado para:</p>
+                <ul>
+                    <li class="solo">Crear bases de datos de escritorio para administrar información.</li>
+                    <li class="solo">Desarrollar aplicaciones para el seguimiento de inventario, contactos y proyectos.</li>
+                    <li class="solo">Crear informes y consultas personalizadas para analizar datos.</li>
+                    <li class="solo">Diseñar formularios para facilitar la entrada y visualización de datos</li>
+                </ul>
+            </header>
+            <header class="cabe"> 
+                <div class="je"><h2 id="seis">Utilización de PostgreSQL:</h2>  </div>
+                <p>PostgreSQL es otro sistema de gestión de bases de datos relacionales de código abierto conocido por su robustez, escalabilidad y soporte para características avanzadas. Se utiliza en diversos escenarios, incluyendo:</p>
+                <ul>
+                    <li class="solo">Aplicaciones web y sistemas empresariales.</li>
+                    <li class="solo">Almacenamiento y análisis de datos geoespaciales.</li>
+                    <li class="solo">Soluciones de análisis de datos y almacenamiento en caché.</li>
+                    <li class="solo">Proyectos de desarrollo de software de código abierto debido a su licencia.</li>
+                </ul>
+            </header>
+        </div>
+        <div>
+            <header class="cabe"> 
+                <div class="je"><h2 id="siete">Aplicaciones para gestion de bases de datos:</h2>  </div>
+                <p>Las aplicaciones mencionadas son herramientas populares para gestionar bases de datos relacionales, cada una diseñada para trabajar con sistemas específicos. </p>
+                <ol>
+                    <li class="solo">
+                        <dt class="letra">SQLyog:</dt>
+                        <dd>SQLyog es una herramienta de administración de bases de datos relacionales diseñada específicamente para trabajar con bases de datos MySQL. Proporciona una interfaz gráfica de usuario intuitiva que facilita la creación, modificación y gestión de bases de datos MySQL. SQLyog permite realizar tareas como consultas SQL, diseño y administración de tablas, copias de seguridad y restauraciones, importación y exportación de datos, entre otras funciones. Es especialmente útil para desarrolladores y administradores de bases de datos que trabajan con bases de datos MySQL.</dd>
+                    </li>
+                    <li class="solo">
+                        <dt class="letra">HeidiSQL:</dt>
+                        <dd>HeidiSQL es una herramienta de administración de bases de datos gratuita y de código abierto que admite bases de datos MySQL, MariaDB, Microsoft SQL Server y PostgreSQL. Esta aplicación también proporciona una interfaz gráfica de usuario para realizar tareas de administración de bases de datos, como consultas SQL, diseño de tablas, gestión de usuarios, importación y exportación de datos, y más. HeidiSQL es ampliamente utilizado por desarrolladores y administradores de bases de datos debido a su sencillez y versatilidad en el manejo de diferentes sistemas de bases de datos.</dd>
+                    </li>
+                    <li class="solo">
+                        <dt class="letra">pgAdmin:</dt>
+                        <dd>pgAdmin es una herramienta de administración de bases de datos de código abierto diseñada específicamente para trabajar con bases de datos PostgreSQL. Proporciona una interfaz gráfica de usuario para administrar y desarrollar bases de datos PostgreSQL, lo que incluye tareas como consultas SQL, diseño de tablas, configuración de usuarios y roles, creación de vistas, programación de funciones y mucho más. pgAdmin es muy utilizado en el ecosistema de PostgreSQL debido a su amplia gama de funciones y su enfoque específico en este sistema de gestión de bases de datos.</dd>
+                    </li>
+                    <li class="solo">
+                        <dt class="letra">DBEaver</dt>
+                        <dd>es otra herramienta popular para la gestión de bases de datos, conocida por su versatilidad y compatibilidad con múltiples sistemas de bases de datos. Se trata de una herramienta de código abierto que proporciona una interfaz gráfica de usuario para trabajar con bases de datos relacionales y no relacionales, lo que la hace adecuada para una amplia gama de escenarios y proyectos.</dd>
+                    </li>
+                </ol>
+            </header>
+        </div>
+
+        <div>
+            <header class="cabe">
+                <div class="je"><h2 id="ocho">Los motores de bases de datos existente</h2></div>
+                <p>
+                    Existen varios motores de bases de datos, cada uno con características y funcionalidades específicas. A continuación, se mencionan algunos de los motores de bases de datos más conocidos:</p>
+                <ul>
+                    <li class="solo">
+                        <dt class="letra" id="a">
+                            Funcionamiento de Access:</dt>
+                        <dd>Microsoft Access es una herramienta de gestión de bases de datos de escritorio que forma parte del paquete de Microsoft Office. Permite a los usuarios crear y administrar bases de datos relacionales sin la necesidad de conocimientos avanzados en programación. Access utiliza el modelo relacional y proporciona una interfaz gráfica de usuario que facilita la creación de tablas, relaciones, formularios, informes y consultas.</dd>
+                        <dt>Creando Tablas en Access:</dt>
+                        <dd>
+                            <ol>
+                                <li class="solo">Abre Microsoft Access y crea una nueva base de datos o abre una existente.</li>
+                                <li class="solo">Haz clic en la pestaña "Tabla" en la parte superior de la pantalla.</li>
+                                <li class="solo">Selecciona el método para crear la tabla:
+                                    <ol type="a">
+                                        <li class="solo">Utiliza la Vista Hoja de Datos para ingresar directamente los datos en la tabla.</li>
+                                        <li class="solo"> Utiliza la Vista Diseño para definir los campos de la tabla y sus tipos de datos.</li>
+                                    </ol>
+                                </li>
+                                <li class="solo">Define los campos de la tabla y sus propiedades, como el tipo de datos, la clave primaria, etc.</li>
+                                <li class="solo">Guarda la tabla con un nombre descriptivo.</li>
+                            </ol>
+                        </dd>
+                        <dt>Creando Relaciones en Access:</dt>
+                        <dd>
+                            <ol>
+                                <li class="solo">Asegúrate de tener dos o más tablas creadas con campos que se relacionen.</li>
+                                <li class="solo">Haz clic en la pestaña "Base de Datos" en la parte superior de la pantalla.</li>
+                                <li class="solo">Selecciona "Relaciones" en el grupo "Herramientas de base de datos".</li>
+                                <li class="solo">Arrastra los campos relacionados entre las tablas para crear la relación.</li>
+                                <li class="solo">Establece la integridad referencial para mantener la consistencia de los datos y las relaciones.</li>
+                            </ol>
+                        </dd>
+                        <dt>Creando Formularios en Access:</dt>
+                        <dd>
+                            <ol>
+                                <li class="solo">Haz clic en la pestaña "Formularios" en la parte superior de la pantalla.</li>
+                                <li class="solo">Utiliza el Asistente de Formularios para crear un formulario automáticamente basado en una tabla o consulta, o selecciona una vista en blanco para diseñar tu propio formulario.</li>
+                                <li class="solo">Personaliza el diseño del formulario, agregando campos, etiquetas, botones y otros controles.</li>
+                                <li class="solo">Guarda el formulario con un nombre descriptivo.</li>
+                            </ol>
+                        </dd>
+                        <dt>Creando Informes en Access:</dt>
+                        <dd>
+                            <ol>
+                                <li class="solo">Haz clic en la pestaña "Informes" en la parte superior de la pantalla.</li>
+                                <li class="solo">Utiliza el Asistente para Informes para crear un informe automáticamente basado en una tabla o consulta, o selecciona una vista en blanco para diseñar tu propio informe.</li>
+                                <li class="solo">Personaliza el diseño del informe, agregando campos, títulos, encabezados, pies de página y otros elementos visuales.</li>
+                                <li class="solo">Guarda el informe con un nombre descriptivo.</li>
+                            </ol>
+                        </dd>
+                    </li>
+                    <li class="solo">
+                        <dt class="letra" id="b">Funcionamiento de MariaDB/MySQL:</dt>
+                        <dd>son sistemas de gestión de bases de datos relacionales que comparten un origen común y están basados en el modelo relacional. MariaDB es un fork de MySQL, lo que significa que se derivó del código fuente original de MySQL y ha evolucionado independientemente desde entonces.</dd>
+                        <dt>Creando Tablas</dt>
+                        <dd> se utiliza la sentencia SQL "CREATE TABLE".</dd>
+                        <dd><img src="/maria.1.JPG" alt="tabla"> </dd>
+                        <dt>Creando Relaciones:</dt>
+                        <dd> las relaciones entre tablas se establecen utilizando claves primarias y claves foráneas. Para crear una relación, debes definir una columna en una tabla como clave foránea que haga referencia a la clave primaria de otra tabla.</dd>
+                        <dd><img src="/maria.2.JPG" alt="relacion"></dd>
+                        <dt>Programación de Script de Creación de Tablas:</dt>
+                        <dd>Para automatizar la creación de tablas en MariaDB/MySQL, puedes utilizar scripts SQL que contengan las sentencias "CREATE TABLE"</dd>
+                        <dd><img src="/maria.3.JPG" alt="scrip"></dd>
+                        <dt>Programación de Script de Creación de Consultas:</dt>
+                        <dd>se utilizan sentencias SQL SELECT para recuperar datos de las tablas. Puedes escribir consultas directamente en el cliente de base de datos o utilizar lenguajes de programación</dd>
+                        <dd><img src="/maria.4.JPG" alt="consulta"></dd>
+                        
+                    </li>
+                    <li class="solo">
+                        <dt class="letra" id="c">Funcionamiento de PostgreSQL</dt>
+                        <dd>es un sistema de gestión de bases de datos relacional de código abierto, conocido por su robustez, escalabilidad y soporte para características avanzadas.</dd>
+                        <dt>Creando Tablas:</dt>
+                        <dd>se utiliza la sentencia SQL "CREATE TABLE".</dd>
+                        <dd><img src="/postgres.1.JPG" alt="tabla"></dd>
+                        <dt>Creando Relaciones:</dt>
+                        <dd> se establecen utilizando claves primarias y claves foráneas, al igual que en otros sistemas de gestión de bases de datos relacionales. </dd>
+                        <dd><img src="/pos.JPG" alt="relacion"></dd>
+                        <dt>Programación de Script de Creación de Tablas:</dt>
+                        <dd> puedes utilizar scripts SQL que contengan las sentencias "CREATE TABLE". </dd>
+                        <dd><img src="/postgres.3.JPG" alt="tabla"></dd>
+                        <dt>Programación de Script de Creación de Consultas:</dt>
+                        <dd>se utilizan sentencias SQL SELECT para recuperar datos de las tablas. Puedes escribir consultas directamente en el cliente de base de datos o utilizar lenguajes de programación como Python, Java, PHP, etc., para interactuar con la base de datos y ejecutar las consultas.</dd>
+                        <dd><img src="/maria.4.JPG" alt="consulta"></dd>
+                    </li>
+                    
+                </ul>
+            </header>
+        </div>
+    
+    </div>
+    
+</body>
+</html>
